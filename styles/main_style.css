@@ -1,0 +1,258 @@
+
+@import url("https://use.typekit.net/rlh3rji.css");
+
+body {
+    --pale-white: rgb(253, 252, 245);
+    background-color: var(--pale-white);
+}
+
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+    /* border: black solid 1px; */
+}
+
+
+html {
+	font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji'; /* 1 */
+	line-height: 1.2rem; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 3 */
+	tab-size: 4; /* 4 */
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+
+small {
+	font-size: 80%;
+}
+
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+
+table {
+	border-color: currentcolor;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+legend {
+	padding: 0;
+}
+
+
+progress {
+	vertical-align: baseline;
+}
+
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+
+summary {
+	display: list-item;
+}
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+
+nav {
+    backdrop-filter: blur(15px);
+    background-color: rgba(253, 252, 245, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 75px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid rgba(183, 182, 182, 0.7) 1px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    text-shadow: 0 0 1.5rem white;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+#postman-logo {
+    font-size: 2.5rem;
+    text-shadow: 0 0 1.5rem white;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#nav-logo-text {
+    display: inline-block;
+    margin-left: 7px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 0.75rem white;
+}
+
+main {
+    margin: 20px 75px;
+    margin: 0 calc(7vw + 3rem);
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-family: 'ivybodoni', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0ch;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'ivybodoni', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.waterfall {
+    column-gap: 12px;
+    padding: 0;
+    column-count: 3;
+}
+
+.waterfall-card {
+  width: 100%;
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  break-inside: avoid;
+  margin-bottom: 50px;
+}
+
+.waterfall-card img {
+    border-radius: 15px;
+    min-height: 250px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
