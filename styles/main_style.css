@@ -2,8 +2,16 @@
 @import url("https://use.typekit.net/rlh3rji.css");
 
 body {
+    /* color variables */
     --pale-white: rgb(253, 252, 245);
+    --navy-silver: rgb(169, 176, 190);
+    --navy-gray: rgb(75, 79, 87);
+    --navy-black: rgb(26, 34, 53);
+    --sky-blue: rgb(83, 182, 222);
+    --sunset-blue:rgb(29, 97, 150);
+    
     background-color: var(--pale-white);
+    margin: 0;
 }
 
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -162,9 +170,18 @@ p {
     font-size: 0.9rem;
 }
 
+a:visited, a:link {
+    color: var(--navy-black);
+}
+
+a:hover {
+    color: var(--sky-blue);
+}
+
+/* navbar decorations */
 
 nav {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(12px);
     background-color: rgba(253, 252, 245, 0.3);
     position: fixed;
     left: 0;
@@ -187,6 +204,7 @@ nav ul li {
     list-style: none;
     margin: 0 15px;
     text-shadow: 0 0 1.5rem white;
+    color: var(--navy-black);
 }
 
 nav ul li a {
@@ -197,6 +215,7 @@ nav ul li a {
 
 #postman-logo {
     font-size: 2.5rem;
+    color: var(--navy-black);
     text-shadow: 0 0 1.5rem white;
 }
 
@@ -208,14 +227,16 @@ nav ul li a {
 
 #nav-logo-text {
     display: inline-block;
+    color: var(--navy-black);
     margin-left: 7px;
     font-size: 1.5rem;
     text-shadow: 0 0 0.75rem white;
 }
 
 main {
-    margin: 20px 75px;
     margin: 0 calc(7vw + 3rem);
+    margin-top: 150px;
+    color: var(--navy-black);
 }
 
 h1 {
@@ -233,6 +254,11 @@ h2 {
     font-style: normal;
 }
 
+h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
 .waterfall {
     column-gap: 12px;
     padding: 0;
@@ -241,11 +267,11 @@ h2 {
 
 .waterfall-card {
   width: 100%;
-  max-height: 400px;
+  max-height: 600px;
   padding: 0;
   margin: 0;
   break-inside: avoid;
-  margin-bottom: 50px;
+  margin-bottom: 12px;
 }
 
 .waterfall-card img {
@@ -255,4 +281,87 @@ h2 {
     max-width: 100%;
 }
 
+.waterfall-card img:hover {
+    box-shadow: 0 0 12px var(--sunset-blue);
+}
+
+
+footer {
+    background-color: var(--navy-black);
+    margin-top: 150px;
+    height: 250px;
+    padding: clamp(5vw, calc(7vw + 3rem), 20vw);;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--navy-silver);
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin: 5px 0;
+}
+
+.footer-contact li a {
+    color: var(--pale-white);
+}
+
+.footer-contact li a:hover {
+    color: var(--sky-blue);
+}
+
+.footer-other {
+    text-align: right;
+    max-width: 25vw;
+}
+
+
+#footer-postman-logo {
+    font-size: 2rem;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(4px);
+    background-color: rgba(34, 32, 38, 0.88);
+}
+
+dialog[open] {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 0px solid black;
+    align-items: center;
+    margin: auto;
+    color: var(--pale-white);
+    outline: none;
+}
+
+.focused-work {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.dialog-close-btn {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: var(--pale-white) solid 1px;
+    display: block;
+    margin-top: 20px;
+}
+
+.dialog-close-btn:hover {
+    background-color: var(--pale-white);
+    color: var(--navy-gray);
+}
 

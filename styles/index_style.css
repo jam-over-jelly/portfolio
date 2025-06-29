@@ -2,9 +2,6 @@
     margin-bottom: 75px;
 }
 
-.main-blockbuster {
-    margin-top: 130px;
-}
 .main-blockbuster-picture {
     display: flex;
     justify-content: center;
@@ -28,11 +25,13 @@
 
 .main-blockbuster-text ul {
     flex: 1;
+    margin-left: 20px;
     padding: 0;
     text-align: right;
 }
 
 .main-blockbuster-text ul li {
+    font-size: 0.9rem;
     list-style: none;
     /* border: red solid 1px; */
 }
