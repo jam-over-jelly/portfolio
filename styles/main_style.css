@@ -195,6 +195,10 @@ nav {
     border-bottom: solid rgba(183, 182, 182, 0.7) 1px;
 }
 
+#menu-icon {
+    display: none;
+}
+
 nav ul {
     display: flex;
     margin-top: 25px;
@@ -225,6 +229,11 @@ nav ul li a {
     margin-top: 25px;
 }
 
+.mobile-left {
+    display: flex;
+    align-items: center;
+}
+
 #nav-logo-text {
     display: inline-block;
     color: var(--navy-black);
@@ -232,6 +241,8 @@ nav ul li a {
     font-size: 1.5rem;
     text-shadow: 0 0 0.75rem white;
 }
+
+/* general decorations */
 
 main {
     margin: 0 calc(7vw + 3rem);
@@ -259,6 +270,9 @@ h4 {
     font-size: 1.2rem;
 }
 
+/* waterfall decorations */
+
+
 .waterfall {
     column-gap: 12px;
     padding: 0;
@@ -284,6 +298,8 @@ h4 {
 .waterfall-card img:hover {
     box-shadow: 0 0 12px var(--sunset-blue);
 }
+
+/* footer decorations */
 
 
 footer {
@@ -326,6 +342,9 @@ footer {
 #footer-postman-logo {
     font-size: 2rem;
 }
+
+
+/* dialog decorations */
 
 dialog::backdrop {
     backdrop-filter: blur(4px);

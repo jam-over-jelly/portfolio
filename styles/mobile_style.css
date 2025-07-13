@@ -1,0 +1,59 @@
+@media screen and (max-width: 500px) {
+    main {
+        margin: 0 calc(3vw + 1rem);;
+        margin-top: 150px;
+        color: var(--navy-black);
+    }
+    
+    .waterfall {
+        column-count: 2;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 25px 25px;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-logo {
+        margin: 0;
+        justify-content: space-between;
+    }
+    
+    .nav-list {
+        margin-top: 15px;
+        width: 100vw;
+        padding: 100px 50px;
+        padding-bottom: 900px;
+        background-color: var(--pale-white);
+        border-radius: 10px;
+        z-index: 100;
+
+    }
+
+    .nav-list li {
+        padding: 10px 10px;
+        /* background-color: var(--pale-white); */
+    }
+
+    .nav-list li a {
+        font-size: 1.5rem;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+
+}

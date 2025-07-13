@@ -1,3 +1,8 @@
+#home-link {
+    color: var(--sky-blue);
+    text-decoration: underline;
+}
+
 .main-sec {
     margin-bottom: 75px;
 }
@@ -54,6 +59,18 @@
 
 .main-blog-popup aside {
     flex: 2;
+}
+
+@media screen and (max-width: 500px) {
+    .main-blockbuster-text {
+        flex-direction: column;
+    }
+
+    .main-blockbuster-text ul {
+        flex: 1;
+        padding: 0;
+    }
+
 }
 
 

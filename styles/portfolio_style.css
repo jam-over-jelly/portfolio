@@ -2,3 +2,8 @@
 .portfolio-header {
     margin-bottom: 20px;
 }
+
+#portolio-link {
+    color: var(--sky-blue);
+    text-decoration: underline;
+}

@@ -6,20 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/portfolio_style.css">
     <link rel="stylesheet" href="../styles/main_style.css">
+    <link rel="stylesheet" href="../styles/mobile_style.css">
     <link rel="stylesheet" href="https://use.typekit.net/rlh3rji.css">
     <script src="../scripts/portfolio.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-logo">
-                <h3 id="postman-logo">〠</h3>
-                <h3 id="nav-logo-text">Sdkmae</h3>
+                <div class="mobile-left">
+                    <h3 id="postman-logo">〠</h3>
+                    <h3 id="nav-logo-text">Sdkmae</h3>
+                </div>
+
+                <img src="../site_assets/burger-menu-svgrepo-com.svg" alt="menu icon" id="menu-icon" height="40px" width="40px">
             </div>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="blog_index.html">BLOG</a></li>
+            <ul class="nav-list">
+                <li><a href="../index.html" id="home-link">HOME</a></li>
+                <li><a href="portfolio.html" id="portfolio-link">PORTFOLIO</a></li>
+                <li><a href="blog_index.html" id="blog-link">BLOG</a></li>
             </ul>
         </nav>
     </header>
