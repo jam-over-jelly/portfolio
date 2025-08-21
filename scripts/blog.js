@@ -74,6 +74,7 @@ if (docBody.id == 'blog-index' || docBody.id == 'index') {
 //DOM FUNCTIONS
 //function to display dom content from the object in the article itself (heading, date, tagss)
 function displayArticle() {
+    console.log('hi');
     const articleTitle = document.getElementById('post-title');
     const postSubtitle = document.getElementById('post-subtitle');
     const postDate = document.getElementById('post-date');
