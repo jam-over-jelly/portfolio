@@ -55,10 +55,15 @@
 
 .main-blog-popup section {
     flex: 5;
+    padding-right: 15px;
 }
 
 .main-blog-popup aside {
     flex: 2;
+}
+
+#catalog-list .articleDate {
+    margin: 10px 0 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -73,4 +78,7 @@
 
 }
 
-
+.blogBlock {
+    padding: 20px 0 10px;
+    border-bottom: 1px var(--navy-silver) solid;
+}

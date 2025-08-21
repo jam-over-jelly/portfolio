@@ -1,3 +1,6 @@
+/* * {
+    border: red solid 1px;
+} */
 main section {
     height: 40vh;
 }
@@ -5,4 +8,86 @@ main section {
 #blog-link {
     color: var(--sky-blue);
     text-decoration: underline;
+}
+
+/* blog details */
+
+.blog-details {
+    margin: 250px 0 130px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-details .center {
+    position: relative;
+}
+
+.blog-details img {
+    position: absolute;
+    opacity: 40%;
+
+}
+
+.bd-left h1 {
+    font-size: 5rem;
+    line-height: 4.3rem;
+    font-style: normal;
+}
+
+.bd-left h1:nth-child(2) {
+    margin-left: 100px;
+}
+
+.bd-right {
+    text-shadow: 0 0 5px var(--pale-white);
+    width: 300px;
+}
+
+.center {
+    display: flex;
+    gap: 30px;
+}
+
+.blog-catalog h1 {
+    padding-bottom: 20px;
+    border-bottom: var(--navy-black) solid 1px;
+}
+
+
+.blogBlock {
+    margin: 40px 0 40px;
+    padding-bottom: 30px;
+    border-bottom: var(--navy-gray) dashed 1px;
+}
+
+.blogBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogBlock a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'ivybodoni', sans-serif;
+    line-height: 20px;
+}
+
+.infoDiv {
+    text-align: right;
+}
+
+.titleDiv {
+    width: 60%;
+}
+
+.articleDate {
+    color: var(--navy-gray);
+}
+
+
+.infoDiv div {
+    margin-bottom: 5px;
 }

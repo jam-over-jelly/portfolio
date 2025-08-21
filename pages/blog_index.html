@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Catalog</title>
     <link rel="stylesheet" href="../styles/blog_index.css">
     <link rel="stylesheet" href="../styles/main_style.css">
     <link rel="stylesheet" href="../styles/mobile_style.css">
     <link rel="stylesheet" href="https://use.typekit.net/rlh3rji.css">
     <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/blog.js" defer type="module"></script>
 </head>
-<body>
+<body id="blog-index">
     <header>
         <nav>
             <div class="nav-logo">
@@ -29,10 +30,33 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Blog coming soon!</h1>
-            <p>Be on the lookout :)</p>
-        </section>
+        <div class="blog-details">
+            <img src="../site_assets/blog-index-cylinder.png" alt="" width="380px" class="blog-details-img">
+            <div class="blog-details-text">
+                <div class="center">
+                    <div class="bd-left">
+                        <h1>My Blog</h1>
+                        <h1>Details</h1>
+                    </div>
+                    <div class="bd-right">
+                        <p>
+                            This is where I write about my interests, namely media that stands out to me. Topics include music, visual art,
+                            movies, shows, and more. I enjoy analyzing media, so I can learn a little bit from it too!
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="blog-featured">
+            <!-- <h1>Featured</h1> -->
+        </div>
+        <div class="blog-catalog">
+            <h1 id="CatalogHeader">Catalog</h1>
+            <div id="catalog-list"></div>
+            <a href="#CatalogHeader">Back to the top</a>
+
+        </div>
         
     </main>
     <footer>
