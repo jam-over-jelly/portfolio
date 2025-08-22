@@ -85,7 +85,7 @@ function displayArticle() {
     for (const post of postArray) {
         console.log(post);
         console.log(slicedUrl);
-        if (post[0].includes(slicedUrl)) {
+        if (slicedUrl.includes(post[0])) {
             const postObj = createPost(post);
             console.log(articleTitle.textContent);
             console.log(postObj);
