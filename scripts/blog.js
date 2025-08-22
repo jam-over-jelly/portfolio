@@ -83,9 +83,9 @@ function displayArticle() {
     const slicedUrl = currentUrl.slice(currentUrl.indexOf('blog_pages/'), currentUrl.indexOf('.html'));
     
     for (const post of postArray) {
-        console.log(post);
+        console.log(post[0]);
         console.log(slicedUrl);
-        if (slicedUrl.includes(post[0])) {
+        if (slicedUrl.includes(post[0].slice(0,-1))) {
             const postObj = createPost(post);
             console.log(articleTitle.textContent);
             console.log(postObj);
@@ -100,6 +100,8 @@ function displayArticle() {
                 tagList.appendChild(tagIndiv);
             }
             break;
+        } else {
+            articleTitle.textContent = 'Error';
         }
     }
 }
