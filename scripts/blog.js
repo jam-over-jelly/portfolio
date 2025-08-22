@@ -74,18 +74,21 @@ if (docBody.id == 'blog-index' || docBody.id == 'index') {
 //DOM FUNCTIONS
 //function to display dom content from the object in the article itself (heading, date, tagss)
 function displayArticle() {
-    console.log('hi');
     const articleTitle = document.getElementById('post-title');
     const postSubtitle = document.getElementById('post-subtitle');
     const postDate = document.getElementById('post-date');
     const tagList = document.getElementById('post-tags');
     const currentUrl = window.location.href;
-    const slicedUrl = currentUrl.slice(currentUrl.indexOf('-')-2, currentUrl.indexOf('.html'));
+    //fix the sliced url situation
+    const slicedUrl = currentUrl.slice(currentUrl.indexOf('blog_pages/'), currentUrl.indexOf('.html'));
+    
     for (const post of postArray) {
-        if (post.includes(slicedUrl)) {
+        console.log(post);
+        console.log(slicedUrl);
+        if (post[0].includes(slicedUrl)) {
             const postObj = createPost(post);
             console.log(articleTitle.textContent);
-            
+            console.log(postObj);
             articleTitle.textContent = postObj.postName;
             postSubtitle.textContent = postObj.postSubtitle;
             postDate.textContent = "Published " + postObj.postDate;
